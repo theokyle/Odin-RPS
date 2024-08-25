@@ -2,12 +2,21 @@ function getComputerChoice() {
     let choice = Math.floor((Math.random()*3)+1);
     switch (choice) {
         case 1:
-            return "rock";
+            return "Rock";
         case 2:
-            return "paper";
+            return "Paper";
         case 3:
-            return "scissors";
+            return "Scissors";
     }
 }
-let choice = getComputerChoice();
-console.log(choice);
+
+function getHumanChoice() {
+    return prompt("Rock, Paper, or Scissors?");
+}
+
+let compChoice = getComputerChoice();
+let humanChoice = getHumanChoice();
+
+console.log(humanChoice);
+
+
